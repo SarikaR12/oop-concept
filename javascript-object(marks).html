@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="name"></td>
+        </tr>
+    </table>
+
+
+    <script>
+
+        // program 1.//
+
+        // class student {
+        //     constructor(Physics, Chemistry, Biology, Mathematics, Computer) {
+        //         this.Physics = parseInt(prompt("Enter Physics marks"));
+        //         this.Chemistry = parseInt(prompt("Enter Chemistry Marks"));
+        //         this.Biology = parseInt(prompt("Enter Biology marks"));;
+        //         this.Mathematics = parseInt(prompt("Enter Mathematics marks"));;
+        //         this.Computer = parseInt(prompt("Enter Computer marks"));;
+        //     }
+        //     studentMarks() {
+        //         console.log(`Physics : ${this.Physics}`);
+        //         console.log(`Chemistry : ${this.Chemistry}`);
+        //         console.log(`Biology : ${this.Biology}`);
+        //         console.log(`Mathematics : ${this.Mathematics} `);
+        //         console.log(`Computer : ${this.Computer}`);
+        //     }
+        //     studentResult(Physics, Chemistry, Biology, Mathematics, Computer) {
+        //         this.studentMarks();
+        //         let total = this.Physics + this.Chemistry + this.Biology + this.Mathematics + this.Computer;
+        //         console.log(`Total :${total}`);
+        //         let result = total / 5;
+
+        //         if (result >= 91 && result <= 100) {
+        //             console.log(`percentage ${result}%`);
+        //             console.log("Grade : A");
+        //         } else if (result >= 81 && result <= 90) {
+        //             console.log(`percentage ${result}%`);
+        //             console.log("Grade : B");
+        //         }
+        //         else if (result >= 71 && result <= 80) {
+        //             console.log(`percentage ${result}%`);
+        //             console.log("Grade : C");
+        //         } else if (result >= 61 && result <= 70) {
+        //             console.log(`percentage ${result}%`);
+        //             console.log("Grade : D");
+        //         } else if (result >= 51 && result <= 60) {
+        //             console.log(`percentage ${result}%`);
+        //             console.log("Grade : E");
+        //         } else if (result >= 40 && result <= 50) {
+        //             console.log(`percentage ${result}%`);
+        //             console.log("Grade : E");
+        //         } else {
+        //             console.log("Are You Fail");
+        //         }
+        //     }
+        // }
+
+        // s1 = new student();
+        // s1.studentResult();
+
+
+        // program 2.//
+
+        // class data {
+        //     constructor(name, email, phone) {
+        //         this.name = name;
+        //         this.email = email;
+        //         this.phone = phone;
+        //     }
+        //     printLine() {
+        //         console.log(`Name : ${this.name}, Email : ${this.email}, Phone : ${this.phone}`);
+        //     }
+        // }
+
+        // c1 = new data("jay", "jay@gmail.com", 12345)
+        // c1.printLine();
+        // c2 = new data("ajay", "ajay@gmail.com", 12345)
+        // c2.printLine();
+        // c3 = new data("vijay", "vijay@gmail.com", 12345)
+        // c3.printLine();
+        // c4 = new data("ashish", "ashish@gmail.com", 12345)
+        // c4.printLine();
+
+
+
+        // program 3.//
+
+        // class MultiplicationTable {
+        //     constructor(number) {
+        //         this.number = number;
+        //     }
+
+        //     printTable() {
+        //         let i = 1;
+        //         console.log(`Multiplication table =  ${this.number}:`);
+        //         do {
+        //             console.log(`${this.number} * ${i} = ${this.number * i}`);
+        //             i++;
+        //         } while (i <= 10);
+        //     }
+        // }
+
+        // let number = 5;
+        // let table = new MultiplicationTable(number);
+        // table.printTable();
+
+
+
+        // program 4.//
+
+        // class Employee {
+        //     constructor(name, salary, hireDate, hiremonth, hireyear) {
+        //         this.name = name;
+        //         this.salary = salary;
+        //         this.hireDate = hireDate;
+        //         this.hireDate = hireDate;
+        //         this.hiremonth = hiremonth;
+        //         this.hireyear = hireyear;
+        //     }
+        //     serviceofdata() {
+        //         console.log(`Name : ${this.name}`);
+        //         console.log(`Salary : ${this.salary}`);
+        //         console.log(`Hire Date : ${this.hireDate}-${this.hiremonth}-${this.hireyear}`);
+        //         let date = new Date();
+        //         console.log(`Today Date :${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`);
+        //     }
+        //     serviceofyears(hireDate, hireyear, hiremonth) {
+        //         let date = new Date();
+        //         console.log(`years of service : ${date.getFullYear() - this.hireyear} Years ${date.getMonth() + 1 - this.hiremonth} month ${date.getDate() - this.hireDate} Day`);
+        //     }
+        // }
+
+        // E1 = new Employee("sarika", 60000, 20, 8, 2022);
+        // E1.serviceofdata();
+        // E1.serviceofyears();
+
+
+        // program 5.//
+
+        // class Library {
+        //     constructor(arr) {
+        //         this.arr = []
+        //     }
+        //     books() {
+        //         console.log("books");
+        //         this.arr = ['okhaharan', 'vanvas', 'shivpuran', 'Mahatma-Gandhi']
+        //         console.log(this.arr);
+        //     }
+        //     addbooks(arr) {
+        //         console.log("Add The Books");
+        //         this.arr.push("krishna", "yog-viyog")
+        //         console.log(this.arr);
+        //     }
+        //     removebooks(arr) {
+        //         console.log("Remove books");
+        //         let input = "vanvas";
+        //         let res = this.arr.filter((val) => val !== input)
+        //         console.log(res);
+        //     }
+        // }
+
+        // l1 = new Library()
+        // l1.books();
+        // l1.addbooks()
+        // l1.removebooks()
+
+
+        // program 6.//
+
+        class Restaurant {
+            constructor() {
+                this.menuItems = {};
+                this.price = {};
+                this.ratings = [];
+            }
+            addItem(item, price, rating) {
+                this.menuItems[item] = price;
+                this.price[item] = price;
+                this.ratings.push(rating);
+                console.log(`${item}  ${price} add the menu.`);
+            }
+            removeItem(item) {
+                if (this.menuItems.hasOwnProperty(item)) {
+                    delete this.menuItems[item];
+                    delete this.price[item];
+                    console.log(`${item} removed the menu.`);
+                } else {
+                    console.log(`${item} not found the menu.`);
+                }
+            }
+            calculateAeverageRating() {
+                if (this.ratings.length == 0) {
+                    return 0;
+                }
+
+                let sum = this.ratings.reduce((acc, rating) => acc + rating, 0);
+                let averageRating = sum / this.ratings.length;
+                return averageRating;
+            }
+        }
+
+
+        let r1 = new Restaurant();
+
+        r1.addItem("panipuri", 100, 10);
+        r1.addItem("hotdog", 140, 9);
+        r1.addItem("burger", 50, 8);
+
+        r1.removeItem("burger");
+        console.log("Average Rating:", r1.calculateAeverageRating());
+
+    </script>
+</body>
+
+</html>
