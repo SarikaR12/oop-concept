@@ -175,6 +175,51 @@
         // l1.addbooks()
         // l1.removebooks()
 
+
+        // program 6.//
+
+        class Restaurant {
+            constructor() {
+                this.menuItems = {};
+                this.price = {};
+                this.ratings = [];
+            }
+            addItem(item, price, rating) {
+                this.menuItems[item] = price;
+                this.price[item] = price;
+                this.ratings.push(rating);
+                console.log(`${item}  ${price} add the menu.`);
+            }
+            removeItem(item) {
+                if (this.menuItems.hasOwnProperty(item)) {
+                    delete this.menuItems[item];
+                    delete this.price[item];
+                    console.log(`${item} removed the menu.`);
+                } else {
+                    console.log(`${item} not found the menu.`);
+                }
+            }
+            calculateAeverageRating() {
+                if (this.ratings.length == 0) {
+                    return 0;
+                }
+
+                let sum = this.ratings.reduce((acc, rating) => acc + rating, 0);
+                let averageRating = sum / this.ratings.length;
+                return averageRating;
+            }
+        }
+
+
+        let r1 = new Restaurant();
+
+        r1.addItem("panipuri", 100, 10);
+        r1.addItem("hotdog", 140, 9);
+        r1.addItem("burger", 50, 8);
+
+        r1.removeItem("burger");
+        console.log("Average Rating:", r1.calculateAeverageRating());
+
     </script>
 </body>
 
